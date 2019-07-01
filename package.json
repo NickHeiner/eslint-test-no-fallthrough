@@ -1,0 +1,24 @@
+{
+  "name": "eslint-test-no-fallthrough",
+  "version": "0.0.0",
+  "dependencies": {
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "typescript": "^3.5.2"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-fallthrough": "error"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "ecmaFeatures": {
+          "jsx": true
+      }
+    }
+  }
+}
